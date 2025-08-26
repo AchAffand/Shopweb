@@ -19,15 +19,15 @@ export const Hero: React.FC = () => {
           <div className="space-y-8 animate-fadeInUp">
             <div className="space-y-4">
               <p className="text-yellow-500 font-semibold tracking-wider uppercase text-sm">
-                New Collection 2024
+                Koleksi Baru 2024
               </p>
               <h1 className="text-4xl lg:text-6xl font-bold leading-tight">
-                Explore the 
-                <span className="block text-yellow-500">New Collection</span>
+                Jelajahi 
+                <span className="block text-yellow-500">Koleksi Terbaru</span>
               </h1>
               <p className="text-gray-300 text-lg max-w-md">
-                Discover our latest luxury fashion pieces crafted with precision and elegance. 
-                Elevate your style with timeless sophistication.
+                Temukan koleksi fashion mewah terbaru kami yang dibuat dengan presisi dan keanggunan. 
+                Tingkatkan gaya Anda dengan kecanggihan yang tak lekang waktu.
               </p>
             </div>
             
@@ -35,12 +35,12 @@ export const Hero: React.FC = () => {
               <button className="bg-yellow-500 text-black px-8 py-4 rounded-full font-semibold 
                                hover:bg-yellow-400 transition-all duration-300 transform hover:scale-105
                                flex items-center justify-center space-x-2 group">
-                <span>Shop Now</span>
+                <span>Belanja Sekarang</span>
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </button>
               <button className="border-2 border-white text-white px-8 py-4 rounded-full font-semibold 
                                hover:bg-white hover:text-black transition-all duration-300 transform hover:scale-105">
-                View Lookbook
+                Lihat Katalog
               </button>
             </div>
           </div>
@@ -58,8 +58,8 @@ export const Hero: React.FC = () => {
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 to-transparent" />
               <div className="absolute bottom-6 left-6 right-6">
                 <div className="bg-white/10 backdrop-blur-sm rounded-lg p-4 text-white">
-                  <h3 className="font-semibold text-lg">Signature Collection</h3>
-                  <p className="text-sm text-gray-200">Starting from $285</p>
+                  <h3 className="font-semibold text-lg">Koleksi Signature</h3>
+                  <p className="text-sm text-gray-200">Mulai dari Rp 4.275.000</p>
                 </div>
               </div>
             </div>

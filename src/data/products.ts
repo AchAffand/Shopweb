@@ -3,25 +3,25 @@ import { Product, Category } from '../types';
 export const categories: Category[] = [
   {
     id: 'handbags',
-    name: 'Handbags',
+    name: 'Tas Tangan',
     image: 'https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg',
     productCount: 24
   },
   {
     id: 'clothing',
-    name: 'Clothing',
+    name: 'Pakaian',
     image: 'https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg',
     productCount: 48
   },
   {
     id: 'accessories',
-    name: 'Accessories',
+    name: 'Aksesoris',
     image: 'https://images.pexels.com/photos/1927259/pexels-photo-1927259.jpeg',
     productCount: 32
   },
   {
     id: 'shoes',
-    name: 'Shoes',
+    name: 'Sepatu',
     image: 'https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg',
     productCount: 36
   }
@@ -30,13 +30,13 @@ export const categories: Category[] = [
 export const products: Product[] = [
   {
     id: '1',
-    name: 'Signature Leather Tote',
+    name: 'Tas Kulit Signature',
     price: 285,
     originalPrice: 350,
     image: 'https://images.pexels.com/photos/1152077/pexels-photo-1152077.jpeg',
     category: 'handbags',
     colors: ['#8B4513', '#000000', '#D2B48C'],
-    sizes: ['Small', 'Medium', 'Large'],
+    sizes: ['Kecil', 'Sedang', 'Besar'],
     rating: 4.8,
     reviews: 127,
     isNew: true,
@@ -44,7 +44,7 @@ export const products: Product[] = [
   },
   {
     id: '2',
-    name: 'Classic Leather Jacket',
+    name: 'Jaket Kulit Klasik',
     price: 450,
     image: 'https://images.pexels.com/photos/1124465/pexels-photo-1124465.jpeg',
     category: 'clothing',
@@ -56,7 +56,7 @@ export const products: Product[] = [
   },
   {
     id: '3',
-    name: 'Elegant Evening Dress',
+    name: 'Gaun Malam Elegan',
     price: 320,
     image: 'https://images.pexels.com/photos/996329/pexels-photo-996329.jpeg',
     category: 'clothing',
@@ -67,7 +67,7 @@ export const products: Product[] = [
   },
   {
     id: '4',
-    name: 'Designer Sunglasses',
+    name: 'Kacamata Hitam Desainer',
     price: 180,
     image: 'https://images.pexels.com/photos/1927259/pexels-photo-1927259.jpeg',
     category: 'accessories',
@@ -78,7 +78,7 @@ export const products: Product[] = [
   },
   {
     id: '5',
-    name: 'Premium Ankle Boots',
+    name: 'Sepatu Boot Premium',
     price: 295,
     image: 'https://images.pexels.com/photos/2529148/pexels-photo-2529148.jpeg',
     category: 'shoes',
@@ -89,7 +89,7 @@ export const products: Product[] = [
   },
   {
     id: '6',
-    name: 'Silk Scarf Collection',
+    name: 'Koleksi Syal Sutra',
     price: 95,
     image: 'https://images.pexels.com/photos/1659438/pexels-photo-1659438.jpeg',
     category: 'accessories',
@@ -99,7 +99,7 @@ export const products: Product[] = [
   },
   {
     id: '7',
-    name: 'Cashmere Sweater',
+    name: 'Sweater Kasmir',
     price: 240,
     image: 'https://images.pexels.com/photos/1040945/pexels-photo-1040945.jpeg',
     category: 'clothing',
@@ -111,12 +111,12 @@ export const products: Product[] = [
   },
   {
     id: '8',
-    name: 'Structured Crossbody Bag',
+    name: 'Tas Selempang Terstruktur',
     price: 195,
     image: 'https://images.pexels.com/photos/1102336/pexels-photo-1102336.jpeg',
     category: 'handbags',
     colors: ['#000000', '#8B4513', '#F5F1EB'],
-    sizes: ['Small', 'Medium'],
+    sizes: ['Kecil', 'Sedang'],
     rating: 4.7,
     reviews: 112,
     isNew: true

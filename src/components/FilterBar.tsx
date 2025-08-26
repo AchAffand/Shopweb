@@ -15,18 +15,18 @@ export const FilterBar: React.FC<FilterBarProps> = ({
   onSortChange
 }) => {
   const categories = [
-    { id: 'all', name: 'All Products' },
-    { id: 'handbags', name: 'Handbags' },
-    { id: 'clothing', name: 'Clothing' },
-    { id: 'accessories', name: 'Accessories' },
-    { id: 'shoes', name: 'Shoes' }
+    { id: 'all', name: 'Semua Produk' },
+    { id: 'handbags', name: 'Tas Tangan' },
+    { id: 'clothing', name: 'Pakaian' },
+    { id: 'accessories', name: 'Aksesoris' },
+    { id: 'shoes', name: 'Sepatu' }
   ];
 
   const sortOptions = [
-    { value: 'newest', label: 'Newest' },
-    { value: 'price-low', label: 'Price: Low to High' },
-    { value: 'price-high', label: 'Price: High to Low' },
-    { value: 'popular', label: 'Most Popular' }
+    { value: 'newest', label: 'Terbaru' },
+    { value: 'price-low', label: 'Harga: Rendah ke Tinggi' },
+    { value: 'price-high', label: 'Harga: Tinggi ke Rendah' },
+    { value: 'popular', label: 'Paling Populer' }
   ];
 
   return (
@@ -60,7 +60,7 @@ export const FilterBar: React.FC<FilterBarProps> = ({
           <div className="flex items-center space-x-4">
             <div className="flex items-center space-x-2">
               <SortAsc className="w-5 h-5 text-gray-600" />
-              <span className="font-medium text-gray-900">Sort by:</span>
+              <span className="font-medium text-gray-900">Urutkan:</span>
             </div>
             <select
               value={sortBy}

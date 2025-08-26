@@ -139,7 +139,11 @@ function App() {
           products={filteredProducts}
           onAddToCart={addToCart}
           onQuickView={openQuickView}
-          title={selectedCategory === 'all' ? 'All Products' : `${selectedCategory.charAt(0).toUpperCase() + selectedCategory.slice(1)}`}
+          title={selectedCategory === 'all' ? 'Semua Produk' : 
+            selectedCategory === 'handbags' ? 'Tas Tangan' :
+            selectedCategory === 'clothing' ? 'Pakaian' :
+            selectedCategory === 'accessories' ? 'Aksesoris' :
+            selectedCategory === 'shoes' ? 'Sepatu' : 'Produk'}
         />
       </main>
 
@@ -147,50 +151,50 @@ function App() {
         <div className="container mx-auto px-4">
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
             <div className="space-y-4">
-              <h3 className="text-xl font-bold text-yellow-500">LUXINE</h3>
+              <h3 className="text-xl font-bold text-yellow-500">AFFAN PROTOTYPE</h3>
               <p className="text-gray-400">
-                Luxury fashion for the modern lifestyle. Discover timeless pieces crafted with precision.
+                Fashion mewah untuk gaya hidup modern. Temukan karya tak lekang waktu yang dibuat dengan presisi.
               </p>
             </div>
             
             <div className="space-y-4">
-              <h4 className="font-semibold">Shop</h4>
+              <h4 className="font-semibold">Belanja</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">New Arrivals</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Women</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Men</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Sale</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Produk Baru</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Wanita</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Pria</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Diskon</a></li>
               </ul>
             </div>
             
             <div className="space-y-4">
-              <h4 className="font-semibold">Support</h4>
+              <h4 className="font-semibold">Bantuan</h4>
               <ul className="space-y-2 text-gray-400">
-                <li><a href="#" className="hover:text-white transition-colors">Contact Us</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Size Guide</a></li>
-                <li><a href="#" className="hover:text-white transition-colors">Returns</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Hubungi Kami</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Panduan Ukuran</a></li>
+                <li><a href="#" className="hover:text-white transition-colors">Pengembalian</a></li>
                 <li><a href="#" className="hover:text-white transition-colors">FAQ</a></li>
               </ul>
             </div>
             
             <div className="space-y-4">
               <h4 className="font-semibold">Newsletter</h4>
-              <p className="text-gray-400 text-sm">Subscribe for exclusive offers and new arrivals.</p>
+              <p className="text-gray-400 text-sm">Berlangganan untuk penawaran eksklusif dan produk baru.</p>
               <div className="flex">
                 <input
                   type="email"
-                  placeholder="Enter your email"
+                  placeholder="Masukkan email Anda"
                   className="flex-1 bg-gray-800 text-white px-4 py-2 rounded-l-full focus:outline-none focus:ring-2 focus:ring-yellow-500"
                 />
                 <button className="bg-yellow-500 text-black px-6 py-2 rounded-r-full hover:bg-yellow-400 transition-colors">
-                  Subscribe
+                  Berlangganan
                 </button>
               </div>
             </div>
           </div>
           
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>&copy; 2024 LUXINE. All rights reserved.</p>
+            <p>&copy; 2024 AFFAN PROTOTYPE. Semua hak dilindungi.</p>
           </div>
         </div>
       </footer>

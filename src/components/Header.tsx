@@ -24,16 +24,16 @@ export const Header: React.FC<HeaderProps> = ({
           {/* Logo */}
           <div className="flex items-center space-x-8">
             <h1 className="text-2xl font-bold tracking-wider text-yellow-500">
-              LUXINE
+              AFFAN PROTOTYPE
             </h1>
             
             {/* Desktop Navigation */}
             <nav className="hidden lg:flex space-x-8">
-              <a href="#" className="hover:text-yellow-500 transition-colors duration-300">New Arrivals</a>
-              <a href="#" className="hover:text-yellow-500 transition-colors duration-300">Women</a>
-              <a href="#" className="hover:text-yellow-500 transition-colors duration-300">Men</a>
-              <a href="#" className="hover:text-yellow-500 transition-colors duration-300">Accessories</a>
-              <a href="#" className="hover:text-yellow-500 transition-colors duration-300">Sale</a>
+              <a href="#" className="hover:text-yellow-500 transition-colors duration-300">Produk Baru</a>
+              <a href="#" className="hover:text-yellow-500 transition-colors duration-300">Wanita</a>
+              <a href="#" className="hover:text-yellow-500 transition-colors duration-300">Pria</a>
+              <a href="#" className="hover:text-yellow-500 transition-colors duration-300">Aksesoris</a>
+              <a href="#" className="hover:text-yellow-500 transition-colors duration-300">Diskon</a>
             </nav>
           </div>
 
@@ -45,7 +45,7 @@ export const Header: React.FC<HeaderProps> = ({
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
               <input
                 type="text"
-                placeholder="Search products..."
+                placeholder="Cari produk..."
                 value={searchQuery}
                 onChange={(e) => onSearchChange(e.target.value)}
                 onFocus={() => setIsSearchOpen(true)}
@@ -104,7 +104,7 @@ export const Header: React.FC<HeaderProps> = ({
               <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 text-gray-400 w-4 h-4" />
               <input
                 type="text"
-                placeholder="Search products..."
+                placeholder="Cari produk..."
                 value={searchQuery}
                 onChange={(e) => onSearchChange(e.target.value)}
                 className="w-full bg-gray-800 text-white placeholder-gray-400 rounded-full py-2 pl-10 pr-4 
@@ -119,11 +119,11 @@ export const Header: React.FC<HeaderProps> = ({
         {isMobileMenuOpen && (
           <nav className="lg:hidden mt-4 pb-4 animate-slideDown">
             <div className="flex flex-col space-y-3">
-              <a href="#" className="hover:text-yellow-500 transition-colors duration-300">New Arrivals</a>
-              <a href="#" className="hover:text-yellow-500 transition-colors duration-300">Women</a>
-              <a href="#" className="hover:text-yellow-500 transition-colors duration-300">Men</a>
-              <a href="#" className="hover:text-yellow-500 transition-colors duration-300">Accessories</a>
-              <a href="#" className="hover:text-yellow-500 transition-colors duration-300">Sale</a>
+              <a href="#" className="hover:text-yellow-500 transition-colors duration-300">Produk Baru</a>
+              <a href="#" className="hover:text-yellow-500 transition-colors duration-300">Wanita</a>
+              <a href="#" className="hover:text-yellow-500 transition-colors duration-300">Pria</a>
+              <a href="#" className="hover:text-yellow-500 transition-colors duration-300">Aksesoris</a>
+              <a href="#" className="hover:text-yellow-500 transition-colors duration-300">Diskon</a>
             </div>
           </nav>
         )}

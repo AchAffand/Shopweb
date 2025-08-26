@@ -49,8 +49,8 @@ export const ProductGrid: React.FC<ProductGridProps> = ({
                       d="M20 13V6a2 2 0 00-2-2H6a2 2 0 00-2 2v7m16 0v5a2 2 0 01-2 2H6a2 2 0 01-2-2v-5m16 0h-2M4 13h2m13-8l-2 2m0 0l-2-2m2 2v2.5M7 7l2 2m0 0l2-2M9 9v2.5" />
               </svg>
             </div>
-            <h3 className="text-xl font-semibold text-gray-600 mb-2">No products found</h3>
-            <p className="text-gray-500">Try adjusting your search or filter to find what you're looking for.</p>
+            <h3 className="text-xl font-semibold text-gray-600 mb-2">Tidak ada produk ditemukan</h3>
+            <p className="text-gray-500">Coba sesuaikan pencarian atau filter Anda untuk menemukan yang Anda cari.</p>
           </div>
         )}
       </div>

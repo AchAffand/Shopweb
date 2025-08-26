@@ -13,10 +13,10 @@ export const CategoryGrid: React.FC<CategoryGridProps> = ({ selectedCategory, on
       <div className="container mx-auto px-4">
         <div className="text-center mb-12">
           <h2 className="text-3xl lg:text-4xl font-bold text-gray-900 mb-4">
-            Shop by Category
+            Belanja Berdasarkan Kategori
           </h2>
           <p className="text-gray-600 max-w-2xl mx-auto">
-            Discover our curated collections designed for the modern lifestyle
+            Temukan koleksi pilihan kami yang dirancang untuk gaya hidup modern
           </p>
         </div>
 
@@ -44,10 +44,10 @@ export const CategoryGrid: React.FC<CategoryGridProps> = ({ selectedCategory, on
               <div className="absolute bottom-6 left-6 right-6 text-white">
                 <div className="space-y-2">
                   <h3 className="text-xl font-semibold">{category.name}</h3>
-                  <p className="text-sm text-gray-300">{category.productCount} items</p>
+                  <p className="text-sm text-gray-300">{category.productCount} produk</p>
                   <div className="flex items-center space-x-2 text-yellow-400 opacity-0 group-hover:opacity-100 
                                 transition-opacity duration-300">
-                    <span className="text-sm font-medium">Shop now</span>
+                    <span className="text-sm font-medium">Belanja sekarang</span>
                     <ArrowRight className="w-4 h-4 transform transition-transform group-hover:translate-x-1" />
                   </div>
                 </div>

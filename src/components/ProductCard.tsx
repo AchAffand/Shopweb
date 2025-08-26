@@ -31,12 +31,12 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart, 
         <div className="absolute top-4 left-4 flex flex-col gap-2">
           {product.isNew && (
             <span className="bg-yellow-500 text-black px-3 py-1 rounded-full text-xs font-semibold">
-              NEW
+              BARU
             </span>
           )}
           {product.originalPrice && (
             <span className="bg-red-500 text-white px-3 py-1 rounded-full text-xs font-semibold">
-              SALE
+              DISKON
             </span>
           )}
         </div>
@@ -61,7 +61,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart, 
                      hover:bg-white transition-all duration-300 flex items-center justify-center space-x-2"
           >
             <Eye className="w-4 h-4" />
-            <span className="text-sm font-medium">Quick View</span>
+            <span className="text-sm font-medium">Lihat Cepat</span>
           </button>
           <button
             onClick={() => onAddToCart(product)}
@@ -102,7 +102,7 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart, 
         {/* Colors */}
         {product.colors && product.colors.length > 0 && (
           <div className="flex items-center space-x-2">
-            <span className="text-sm text-gray-600">Colors:</span>
+            <span className="text-sm text-gray-600">Warna:</span>
             <div className="flex space-x-1">
               {product.colors.slice(0, 3).map((color, index) => (
                 <div
@@ -121,11 +121,11 @@ export const ProductCard: React.FC<ProductCardProps> = ({ product, onAddToCart, 
         {/* Price */}
         <div className="flex items-center space-x-2">
           <span className="text-2xl font-bold text-gray-900">
-            ${product.price}
+            Rp {(product.price * 15000).toLocaleString('id-ID')}
           </span>
           {product.originalPrice && (
             <span className="text-lg text-gray-500 line-through">
-              ${product.originalPrice}
+              Rp {(product.originalPrice * 15000).toLocaleString('id-ID')}
             </span>
           )}
         </div>

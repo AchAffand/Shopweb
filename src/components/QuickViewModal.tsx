@@ -63,12 +63,12 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({
                 <div className="flex space-x-2">
                   {product.isNew && (
                     <span className="bg-yellow-500 text-black px-3 py-1 rounded-full text-sm font-semibold">
-                      NEW
+                      BARU
                     </span>
                   )}
                   {product.originalPrice && (
                     <span className="bg-red-500 text-white px-3 py-1 rounded-full text-sm font-semibold">
-                      SALE
+                      DISKON
                     </span>
                   )}
                 </div>
@@ -90,7 +90,7 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({
                       ))}
                     </div>
                     <span className="text-sm text-gray-600">
-                      {product.rating} ({product.reviews} reviews)
+                      {product.rating} ({product.reviews} ulasan)
                     </span>
                   </div>
                 )}
@@ -101,11 +101,11 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({
                 {/* Price */}
                 <div className="flex items-center space-x-3">
                   <span className="text-3xl font-bold text-gray-900">
-                    ${product.price}
+                    Rp {(product.price * 15000).toLocaleString('id-ID')}
                   </span>
                   {product.originalPrice && (
                     <span className="text-xl text-gray-500 line-through">
-                      ${product.originalPrice}
+                      Rp {(product.originalPrice * 15000).toLocaleString('id-ID')}
                     </span>
                   )}
                 </div>
@@ -113,7 +113,7 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({
                 {/* Colors */}
                 {product.colors && product.colors.length > 0 && (
                   <div className="space-y-3">
-                    <h3 className="font-semibold text-gray-900">Color</h3>
+                    <h3 className="font-semibold text-gray-900">Warna</h3>
                     <div className="flex space-x-3">
                       {product.colors.map((color, index) => (
                         <button
@@ -132,7 +132,7 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({
                 {/* Sizes */}
                 {product.sizes && product.sizes.length > 0 && (
                   <div className="space-y-3">
-                    <h3 className="font-semibold text-gray-900">Size</h3>
+                    <h3 className="font-semibold text-gray-900">Ukuran</h3>
                     <div className="flex flex-wrap gap-2">
                       {product.sizes.map((size) => (
                         <button
@@ -153,7 +153,7 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({
 
                 {/* Quantity */}
                 <div className="space-y-3">
-                  <h3 className="font-semibold text-gray-900">Quantity</h3>
+                  <h3 className="font-semibold text-gray-900">Jumlah</h3>
                   <div className="flex items-center space-x-4">
                     <div className="flex items-center space-x-2 bg-gray-100 rounded-full">
                       <button
@@ -182,7 +182,7 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({
                              flex items-center justify-center space-x-2"
                   >
                     <ShoppingBag className="w-5 h-5" />
-                    <span>Add to Cart</span>
+                    <span>Tambah ke Keranjang</span>
                   </button>
                   
                   <button className="p-4 border-2 border-gray-300 rounded-full hover:border-red-500 
@@ -194,8 +194,8 @@ export const QuickViewModal: React.FC<QuickViewModalProps> = ({
                 {/* Product Description */}
                 <div className="pt-6 border-t border-gray-200">
                   <p className="text-gray-600 leading-relaxed">
-                    Experience luxury and comfort with this premium piece from our collection. 
-                    Crafted with attention to detail and designed for the modern lifestyle.
+                    Rasakan kemewahan dan kenyamanan dengan produk premium dari koleksi kami. 
+                    Dibuat dengan perhatian terhadap detail dan dirancang untuk gaya hidup modern.
                   </p>
                 </div>
               </div>
